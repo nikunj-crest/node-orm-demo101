@@ -1,9 +1,10 @@
 require("dotenv").config()
 
+// hear no env varibale working brnach nl-task-1
 module.exports = {
-    username: process.env.DB_USERNAME,
-    password: process.env.DB_PASSWORD,
-    database: process.env.DB_NAME,
-    host: process.env.HOST,
+    username: "root",
+    password: "nl@1234",
+    database: "node-orm-setup101",
+    host: "localhost",
     dialect: "mysql"
 }
