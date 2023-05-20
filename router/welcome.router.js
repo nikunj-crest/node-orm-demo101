@@ -1,8 +1,7 @@
 const express = require('express')
 const welcomeRoute = express.Router();
+const welcomeController = require('../controller/welcome.controller')
 
-welcomeRoute.get('/', (req, res) => {
-    res.send('Welcome page..')
-})
+welcomeRoute.get('/welcome', welcomeController.welcome)
 
 module.exports = welcomeRoute
