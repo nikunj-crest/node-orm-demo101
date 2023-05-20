@@ -20,7 +20,7 @@ app.use((error, req, res, next) => {
         res.status(500).json({
             success: false,
             errorData: error,
-            errorMessage: err.message,
+            errorMessage: error.message,
         });
     }
 })
